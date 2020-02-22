@@ -2,7 +2,10 @@ version = 1
 
 test_patterns = ["test/**"]
 
-exclude_patterns = ["vendor/**"]
+exclude_patterns = [
+  "vendor/**",
+  "samples/**"
+]
 
 [[analyzers]]
 name = "ruby"
