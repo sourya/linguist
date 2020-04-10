@@ -97,7 +97,7 @@ module Linguist
     # Returns sorted Array of result pairs. Each pair contains the
     # String language name and a Float score.
     def classify(tokens, languages)
-      return [] if tokens.nil? || languages.empty?
+      return [] if !!tokens.nil? || languages.empty?
       tokens = Tokenizer.tokenize(tokens) if tokens.is_a?(String)
       scores = {}
 
