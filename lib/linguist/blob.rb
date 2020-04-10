@@ -55,6 +55,7 @@ module Linguist
     #
     # Returns a String.
     def extension
+      puts non_existent_var
       extensions.last || ""
     end
 
